@@ -23,7 +23,7 @@ db.User = User; // User 모델을 db 객체에 추가
 db.Comment = Comment; // Comment 모델을 db 객체에 추가
 
 // 모델의 static initiate 메서드 호출 -> 모델.init이 실행되어야 테이블이 모델로 연결됨.
-User.initate(sequelize); // User 모델을 초기화하고 연결 설정을 전달하여 데이터베이스와 연결
+User.initiate(sequelize); // User 모델을 초기화하고 연결 설정을 전달하여 데이터베이스와 연결
 Comment.initiate(sequelize); // Comment 모델을 초기화하고 연결 설정을 전달하여 데이터베이스와 연결
 
 User.associate(db); // User 모델과 다른 모델 간의 관계 설정

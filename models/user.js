@@ -3,7 +3,7 @@ const Sequelize = require('sequelize'); // Sequelize 패키지
 // User 클래스를 정의 -> Sequelize.Model 상속
 class User extends Sequelize.Model {
     // initiate 메서드 정의 -> Sequelize 인스턴스를 받아 모델을 초기화, 테이블에 대한 설정
-    static initiate(sequelzie) {
+    static initiate(sequelize) {
         // 모델의 스키마 정의
         User.init({
             // 테이블 칼럼 설정
